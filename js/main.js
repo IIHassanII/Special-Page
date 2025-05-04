@@ -92,6 +92,10 @@ function makeRandomImg() {
 
 makeRandomImg();
 
+let timeline = document.querySelector(".timeline");
+let timelineLeft = document.querySelectorAll(".left");
+let timelineRight = document.querySelectorAll(".right");
+
 let skills = document.querySelector(".skills");
 
 window.onscroll = function () {
@@ -106,6 +110,16 @@ window.onscroll = function () {
       .forEach((span) => {
         span.style.width = span.dataset.progress;
       });
+  }
+
+  if (window.scrollY >= timeline.offsetTop - 500) {
+    timelineLeft.forEach((e) => {
+      e.classList.add("move");
+    });
+
+    timelineRight.forEach((e) => {
+      e.classList.add("move");
+    });
   }
 };
 
@@ -237,15 +251,11 @@ document.addEventListener("click", (e) => {
   }
 });
 
+let nav = document.querySelector(".nav-bar");
 
-
-
-
-let nav=document.querySelector('.nav-bar')
-
-var headroom  = new Headroom(nav,{
+var headroom = new Headroom(nav, {
   tolerance: 5,
-  offset: 100
+  offset: 100,
 });
 // initialise
 headroom.init();
