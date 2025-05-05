@@ -13,7 +13,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  height: 5000px;
+  height: 5000px;overflow: hidden;
 }
 * {
   box-sizing: border-box;
@@ -411,22 +411,24 @@ body {
   padding: 20px;
   width: calc(50% - 25px);
   background-color: #fff;
-  position: relative;transition: 1s all;
+  position: relative;
+  transition: 1s all;
 }
 .timeline-content .left {
-  float: left;left: -100vw;
+  float: left;
+  left: -100vw;
 }
 
 .timeline-content .right {
-  float: right;left: 100vw;
+  float: right;
+  left: 100vw;
 }
 
-.timeline-content .left.move
-{
-  left: 0 
+.timeline-content .left.move {
+  left: 0;
 }
-.timeline-content .right.move{
-  left: 0
+.timeline-content .right.move {
+  left: 0;
 }
 
 .timeline-content .left h3,
@@ -773,7 +775,6 @@ body {
   background-color: transparent;
 }
 
-
 .headroom {
   z-index: 5000;
   width: 100%;
@@ -790,11 +791,57 @@ body {
   transform: translateY(-100px);
 }
 
-
-.headroom--top{
+.headroom--top {
   background-color: transparent;
 }
 
-.fa-heart{
+.fa-heart {
   color: rgb(190, 7, 7);
 }
+
+
+
+.loadingPage {
+  position: fixed;
+  inset: 0;
+  background-color: #263038;
+  z-index: 99999;display: flex;justify-content: center;align-items: center;
+}
+
+
+/* -------------*/
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #FFF;
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+
+@keyframes bblFadInOut {
+  0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+  40% { box-shadow: 0 2.5em 0 0 }
+}
+    
+/* -------------*/

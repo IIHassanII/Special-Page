@@ -259,3 +259,12 @@ var headroom = new Headroom(nav, {
 });
 // initialise
 headroom.init();
+
+
+$(document).ready(function () {
+  $('.loader').fadeOut(1000,function(){
+    $('.loadingPage').fadeOut(1000)
+    $('body').css('overflow','auto')
+  })
+});
+
