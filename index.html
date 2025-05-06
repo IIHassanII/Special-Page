@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>special Design</title>
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -464,16 +465,16 @@
       <div class="container">
         <h2>Our Gallery</h2>
         <div class="img-box">
-          <img src="img/bg-1.jpg" alt="image one" />
-          <img src="img/bg-2.jpg" alt="image two" />
-          <img src="img/bg-3.jpg" alt="image three" />
-          <img src="img/bg-4.jpg" alt="image four" />
-          <img src="img/bg-5.jpg" alt="image five" />
-          <img src="img/bg-6.jpg" alt="" />
-          <img src="img/bg-7.jpg" alt="" />
-          <img src="img/bg-8.jpg" alt="" />
-          <img src="img/bg-9.jpg" alt="" />
-          <img src="img/bg-10.jpg" alt="" />
+          <img class="wow bounceInLeft" src="img/bg-1.jpg" alt="image one" />
+          <img class="wow bounceInLeft" src="img/bg-2.jpg" alt="image two" />
+          <img data-wow-delay="0.5s" class="wow bounceInDown" src="img/bg-3.jpg" alt="image three" />
+          <img class="wow bounceInRight" src="img/bg-4.jpg" alt="image four" />
+          <img class="wow bounceInRight" src="img/bg-5.jpg" alt="image five" />
+          <img class="wow bounceInLeft" src="img/bg-6.jpg" alt="" />
+          <img class="wow bounceInLeft" src="img/bg-7.jpg" alt="" />
+          <img data-wow-delay="0.5s" class="wow bounceInDown" src="img/bg-8.jpg" alt="" />
+          <img class="wow bounceInRight" src="img/bg-9.jpg" alt="" />
+          <img class="wow bounceInRight" src="img/bg-10.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -540,7 +541,7 @@
       <div class="container">
         <h2>Our Features</h2>
         <div class="features">
-          <div class="feat-box">
+          <div class="feat-box wow fadeInDownBig">
             <img src="img/programming.svg" alt="" />
             <h3>Development</h3>
             <p>
@@ -549,7 +550,7 @@
             </p>
           </div>
 
-          <div class="feat-box">
+          <div  class="feat-box wow zoomIn fadeInDownBig">
             <img src="img/advertising.svg" alt="" />
             <h3>Marketing</h3>
             <p>
@@ -558,7 +559,7 @@
             </p>
           </div>
 
-          <div class="feat-box">
+          <div data-wow-delay="0.2s" class="feat-box wow zoomIn fadeInDownBig">
             <img src="img/hosting-icon.svg" alt="" />
             <h3>Hosting</h3>
             <p>
@@ -567,7 +568,7 @@
             </p>
           </div>
 
-          <div class="feat-box">
+          <div data-wow-delay="0.4s" class="feat-box wow zoomIn fadeInDownBig">
             <img src="img/mobile-app.svg" alt="" />
             <h3>Mobile Develope</h3>
             <p>
@@ -576,7 +577,7 @@
             </p>
           </div>
 
-          <div class="feat-box">
+          <div data-wow-delay="0.6s" data-wow-delay="0.5s" class="feat-box wow zoomIn fadeInDownBig">
             <img src="img/graphic-design.svg" alt="" />
             <h3>Cloud and Servers</h3>
             <p>
@@ -585,7 +586,7 @@
             </p>
           </div>
 
-          <div class="feat-box">
+          <div data-wow-delay="0.8s" class="feat-box wow zoomIn fadeInDownBig">
             <img src="img/web-design.svg" alt="" />
             <h3>Seo</h3>
             <p>
@@ -601,7 +602,7 @@
     <div class="testimonials">
       <div class="container">
         <h3>testimonials</h3>
-        <div class="ts-box">
+        <div data-wow-delay="0.3s" class="ts-box wow fadeIn ">
           <p>
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
@@ -615,7 +616,7 @@
           </div>
         </div>
 
-        <div class="ts-box">
+        <div data-wow-delay="0.3s" class="ts-box wow fadeIn">
           <p>
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
@@ -629,7 +630,7 @@
           </div>
         </div>
 
-        <div class="ts-box">
+        <div data-wow-delay="0.3s" class="ts-box wow fadeIn">
           <p>
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
@@ -648,7 +649,7 @@
 
     <div class="contact">
       <div class="overlay"></div>
-      <div class="container">
+      <div data-wow-delay="0.5s" class=" wow fadeIn container">
         <h2>Contact Us</h2>
         <form action="">
           <div class="left">
@@ -668,6 +669,8 @@
 
     <div class="footer">Created With <i class="fas fa-heart fa-beat"></i> By Hassan Mohamed</div>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
     <script src="js/main.js"></script>
   </body>
